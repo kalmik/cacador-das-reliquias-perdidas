@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PlacesCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <lugares>
+    <lugar nome="Rodoviária" mapName="map1" estado="RN" cidade="caíco" ator="Clotilde" ordem="1" dialogo="Menino, não  sei nada sobre lenda de feijão nenhum. Sobre essas coisa de lenda é melhor perguntar num museu ou perguntar a um padre." dialogo-errado="Não sei nada sobre lenda de feijão nenhum. Pergunte a um padre. Padre sempre sabe de tudo que é lenda." foto="velhinha" />
+    
+    <lugar nome="Igreja do Rosário" mapName="map1" estado="RN" cidade="caíco" ator="Amaralina" ordem="2" dialogo="Lamento criança, mas nunca ouvi nada sobre essa lenda.  Mas eu sei que  A Irmandade dos Negros do Rosário foi fundada em 1864 com a participação de Luiz Chermond, negro, homeopata e zelador daqui da Igreja. Você deveria procurar Seu Posidonio, ele é o chefe da irmandade. Não sei o endereço dele, mas sei que ele é poeta." dialogo-errado="Lamento, não sei de nada sobre essa lenda." foto="moca" />
+
+    <lugar nome="Casa da Cultura" mapName="map1" estado="RN" cidade="caíco" ator="Jurema" ordem="3" dialogo="Aqui são organizadas exposições e eventos culturais. Tem um cordel de Seu Possidonio aqui:
+                                                                                                                              
+    	“Dançando e fazendo ponto                                          
+    	 Trocado a lança na mão                                          
+    	 Trocando uma tesoura                                          
+    	 Dando vida ao baião                                          
+    	 É a dança mais bonita que se viu no sertão”                      
+    	                                                                                                                               
+    	Posidônio do Rósario, que mora na casinha cor do céu" dialogo-errado="Eu sei quem é Seu Possidonio, mas não lembro onde ele mora."  foto="loira"/>
+
+    <lugar nome="Casa Azul" mapName="map1" estado="RN" cidade="caíco" ator="Seu Posidonio" ordem="4" dialogo="O grupo de negros do Rosário foi criado e recebeu este nome porque o fundador se chamava “Manoel do Rosário”. Ele gostava de rezar e acolheu muitos negros fugitivos em 1752. (...) A Irmandade nasceu de uma festa, com a primeira colheita feita após a Abolição, pelos negros livres em 1888. Esse feijão que você procura ta lá na Fazenda Samanau." dialogo-errado="To ocupado menino, volte mais tarde." foto="velhinho"/>
+
+    <lugar nome="Fazenda Samanau" mapName="map1" estado="RN" cidade="caíco" ator="Zeca" ordem="5" dialogo="O feijão já foi colhido e vendido mais se você abri o roçado com essa enxada da tempo de plantar e colher pra festa do Rosário." dialogo-errado="To ocupado menino, volte mais tarde." foto="caipira"/>
+
+  </lugares>
+</PlacesCollection>
