@@ -19,5 +19,9 @@
 
     <lugar nome="Fazenda Samanau" mapName="map1" estado="RN" cidade="caíco" ator="Zeca" ordem="5" dialogo="O feijão já foi colhido e vendido mais se você abri o roçado com essa enxada da tempo de plantar e colher pra festa do Rosário." dialogo-errado="To ocupado menino, volte mais tarde." foto="caipira"/>
 
+     <lugar nome="Rodoviária" mapName="map2" estado="RN" cidade="currais novos" ator="João" ordem="1" dialogo="Panela! Tenho panela não menino. Porque cê num vai comprar uma." dialogo-errado="Comi muito feijão feito em panela de barro na minha mocidade. Hoje num sei nem onde é que vende." foto="velhoestranho"/>
+
+     <lugar nome="Mercado" mapName="map2" estado="RN" cidade="currais novos" ator="Beiçola" ordem="2" dialogo="Hoje é Terça! A feira foi ontem. Tem mais panela de barro não. Você vai ter que pegar um pau de arara lá pra banda dos sitios e procurar direto com o povo que faz as panela. Mas é bom saber primeiro de quem é a panela que você quer comprar. Melhor perguntar ai ao povo do Rosário que mora na cidade." dialogo-errado="Hoje é Terça! A feira foi ontem. Tem mais panela de barro não." foto="gordo"/>
+
   </lugares>
 </PlacesCollection>

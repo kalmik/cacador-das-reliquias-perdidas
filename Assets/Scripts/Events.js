@@ -3,9 +3,10 @@
 static var qtdObjetivos = 0;
 var canvasDialogue: GameObject;
 var objetivos : String[];
+var cidade : String;
 
 function Start(){
-	PlayerPrefs.SetString('cidade','caíco');
+	PlayerPrefs.SetString('cidade',cidade);
 	PlayerPrefs.SetInt('objetivos',0);
 	PlayerPrefs.SetInt('hora',7);
 
