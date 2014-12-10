@@ -11,6 +11,7 @@ var buraco: GameObject;
 var prePrize : GameObject;
 
 var caveBool : Boolean;
+var jumpSceneOnCaveAll : Boolean;
 var xMinToCave : int;
 var xMaxToCave : int;
 var yMinToCave : int;
@@ -180,9 +181,7 @@ function cave(direction: int)
 				if(gridCavado){
 					gridCavado.name = "GRID_"+position.x+"_"+position.y;
 					gridCavado.tag = "buraco";
-					if(foundAnyThing && position.x == coordsToFound.x && position.y == coordsToFound.y){
-						//TODO
-					}
+
 				}
 			}
 		}
@@ -195,9 +194,15 @@ function stopCave()
 	var qtdBuracos : int = GameObject.FindGameObjectsWithTag("buraco").length;
 	var qtdX = (xMaxToCave - xMinToCave) +1;
 	var qtdY = (yMaxToCave - yMinToCave) +1;
-
-	if(qtdBuracos >= (qtdX*qtdY)  && !end){
-		var prize :GameObject = Instantiate(prePrize) as GameObject;
+	var position = getGridPosition();
+	var prize :GameObject;
+	if(foundAnyThing && position.x == coordsToFound.x && Math.Abs(position.y) == coordsToFound.y && !end){
+		prize = Instantiate(prePrize) as GameObject;
+		Time.timeScale = 0;
+		end = true;
+	}
+	if(qtdBuracos >= (qtdX*qtdY) && jumpSceneOnCaveAll && !end ){
+		prize = Instantiate(prePrize) as GameObject;
 		Time.timeScale = 0;
 		end = true;
 		

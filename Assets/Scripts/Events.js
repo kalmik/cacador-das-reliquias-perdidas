@@ -45,7 +45,7 @@ function onShowCanvasDialogue(place:String){
 		qtdObjetivos++;
 	}
 	//PlayerPrefs.SetInt('hora',PlayerPrefs.GetInt('hora')+1);
-	if( loadContent(place,PlayerPrefs.GetString('cidade'),PlayerPrefs.GetInt('objetivos')) && PlayerPrefs.GetInt('objetivos') < 5){
+	if( loadContent(place,PlayerPrefs.GetString('cidade'),PlayerPrefs.GetInt('objetivos')) && PlayerPrefs.GetInt('objetivos') < mapButtons.length){
 			
 		for(var o:int =0 ;o<objetivos.length;o++){
 			print(place);
@@ -57,7 +57,7 @@ function onShowCanvasDialogue(place:String){
 			}
 		}
 		
-		if(PlayerPrefs.GetInt('objetivos') == 5){
+		if(PlayerPrefs.GetInt('objetivos') == mapButtons.length){
 			var play : GameObject = GameObject.Find('playButton');
 			var PlayButtonImage : UnityEngine.UI.Image = play.GetComponent("Image");
 			var PlayButton : UnityEngine.UI.Button = play.GetComponent("Button");
