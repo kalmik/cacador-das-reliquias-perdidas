@@ -23,6 +23,8 @@ var portal : Boolean;
 var coordsToPortal : Vector2;
 var portalScene : String;
 
+var end: Boolean = false;
+
 var time : int;
 function Awake(){
 	if(time == 0){
@@ -93,8 +95,10 @@ function Update () {
 
 	var position = getGridPosition();
 
-	if(portal && position.x == coordsToPortal.x && Math.Abs(position.y) == coordsToPortal.y){
-		Application.LoadLevel(portalScene);
+	if(portal && position.x == coordsToPortal.x && Math.Abs(position.y) == coordsToPortal.y && !end){
+		var prize :GameObject = Instantiate(prePrize) as GameObject;
+		Time.timeScale = 0;
+		end = true;
 	}
 	
 }
@@ -192,8 +196,10 @@ function stopCave()
 	var qtdX = (xMaxToCave - xMinToCave) +1;
 	var qtdY = (yMaxToCave - yMinToCave) +1;
 
-	if(qtdBuracos >= (qtdX*qtdY)){
+	if(qtdBuracos >= (qtdX*qtdY)  && !end){
 		var prize :GameObject = Instantiate(prePrize) as GameObject;
+		Time.timeScale = 0;
+		end = true;
 		
 	}
 }
