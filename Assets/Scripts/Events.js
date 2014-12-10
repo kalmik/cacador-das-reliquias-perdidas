@@ -6,6 +6,8 @@ var objetivos : String[];
 var cidade : String;
 
 function Start(){
+
+	Time.timeScale = 1;
 	PlayerPrefs.SetString('cidade',cidade);
 	PlayerPrefs.SetInt('objetivos',0);
 	PlayerPrefs.SetInt('hora',7);
@@ -21,12 +23,16 @@ function Start(){
 	//onShowCanvasDialogue("Rodoviária");
 }
 function callCanvasDialogue(place:String){
+
 	onShowCanvasDialogue(place);	
 }
 function onShowCanvasDialogue(place:String){
+
 	var placeHour   : UnityEngine.UI.Text = GameObject.Find('horalocal').GetComponent('Text');
 	var horalocal = PlayerPrefs.GetInt('hora');
+
 	for(var h=0;h<=60;h++){
+
 		var ht = h <10 ? "0"+h.ToString() : h.ToString();
 		placeHour.text = horalocal+":"+ht;
 		yield WaitForSeconds(0.05);
