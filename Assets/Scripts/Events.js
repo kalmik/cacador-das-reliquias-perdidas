@@ -18,7 +18,7 @@ function Start(){
 		i++;
 	}
 
-	onShowCanvasDialogue("Rodoviária");
+	//onShowCanvasDialogue("Rodoviária");
 }
 function callCanvasDialogue(place:String){
 	onShowCanvasDialogue(place);	
@@ -46,7 +46,7 @@ function onShowCanvasDialogue(place:String){
 	}
 	//PlayerPrefs.SetInt('hora',PlayerPrefs.GetInt('hora')+1);
 	if( loadContent(place,PlayerPrefs.GetString('cidade'),PlayerPrefs.GetInt('objetivos')) && PlayerPrefs.GetInt('objetivos') < 5){
-
+			
 		for(var o:int =0 ;o<objetivos.length;o++){
 			print(place);
 			if(objetivos[o] == place){
@@ -61,6 +61,11 @@ function onShowCanvasDialogue(place:String){
 			var play : GameObject = GameObject.Find('playButton');
 			var PlayButtonImage : UnityEngine.UI.Image = play.GetComponent("Image");
 			var PlayButton : UnityEngine.UI.Button = play.GetComponent("Button");
+
+			var bt : GameObject = GameObject.Find('JogarButton');
+			var PlayButtonText : UnityEngine.UI.Text = bt.GetComponent("Text");
+			PlayButtonText.color = new Color(255,255,0,1);
+
 			PlayButton.interactable = true;
 			PlayButtonImage.color = new Color(255,255,255,1);
 		}
@@ -96,15 +101,13 @@ private function loadContent(_place,_town, _order: int):Boolean{
 	var npcDialogue : UnityEngine.UI.Text = GameObject.Find('NPCDialogue').GetComponent('Text');
 	var npcName     : UnityEngine.UI.Text = GameObject.Find('NPCName').GetComponent('Text');
 	var placeName   : UnityEngine.UI.Text = GameObject.Find('placeName').GetComponent('Text');
-	//var placeHour   : UnityEngine.UI.Text = GameObject.Find('placehour').GetComponent('Text');
 
 	var npcImage : UnityEngine.UI.Image = GameObject.Find('NPCFace').GetComponent('Image');
 	npcImage.sprite = Resources.Load('Sprites/Persons/Faces/'+place.Face, Sprite);
 	
 	npcName.text = place.NPC;
 	placeName.text = place.Name;
-	var amPm = (PlayerPrefs.GetInt('hora')>=12) ? " pm" : " am";
-	//placeHour.text = PlayerPrefs.GetInt('hora').ToString()+":00"+ amPm;
+
 	if(_order >= place.Order-1){
 		var a : String; 
 		a = place.Dialogue;

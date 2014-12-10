@@ -8,8 +8,31 @@ var actualGridPosition : Vector3;
 var lastDirection: int;
 var terrain: GameObject;
 var buraco: GameObject;
+var prePrize : GameObject;
 
+var caveBool : Boolean;
+var xMinToCave : int;
+var xMaxToCave : int;
+var yMinToCave : int;
+var yMaxToCave : int;
+
+var foundAnyThing : Boolean;
+var coordsToFound : Vector2;
+
+var portal : Boolean;
+var coordsToPortal : Vector2;
+var portalScene : String;
+
+var time : int;
 function Awake(){
+	if(time == 0){
+		var timeOBJ : GameObject = GameObject.Find("Time");
+		timeOBJ.active = false;
+	}
+	else
+	{
+		timeCountDown();
+	}
 }
 
 function Start () {
@@ -20,6 +43,24 @@ function Start () {
 	controls[3] = "d";
 	lastDirection = 2;
 	terrain = GameObject.Find("Terrain");
+
+	
+}
+
+function timeCountDown()
+{
+	var clock : GameObject = GameObject.Find("Clock");
+	var clockText :  UnityEngine.UI.Text = clock.GetComponent("Text");
+	clockText.text = time-1+":"+"59";
+	for(var t=time-1; t>=0;t--){
+		if(t<1) clockText.color = new Color(255,0,0,1);
+		for(var h=59;h>=0;h--){
+			var ht = h < 10 ? "0"+h.ToString() : h.ToString();
+			clockText.text = t+":"+ht;
+			yield WaitForSeconds(1);
+		}
+		if(t<=0) Application.LoadLevel('menu');
+	}
 }
 
 function Update () {
@@ -33,7 +74,7 @@ function Update () {
 	    control = String.Concat(control,moveDown);
 	    control = String.Concat(control,moveRight);
 	/* --------------------------------------------------------
-		o controle é mapeado em um nomero binario
+		o controle é mapeado em um numero binario
 	 	
 	 	1000 -> Movendo para cima     -> Animator.direction = 8
 	 	0100 -> Movendo para esquerda -> Animator.direction = 4
@@ -46,8 +87,14 @@ function Update () {
 	ChangeDirection(direction);
 	//overOnTile();
 	//cavando
-	if(Input.GetKeyDown('space') && rigidbody2D.velocity == Vector3(0,0,0)){
+	if(Input.GetKeyDown('space') && rigidbody2D.velocity == Vector3(0,0,0) && caveBool){
 		spriteAnimator.SetBool('cave',true);
+	}
+
+	var position = getGridPosition();
+
+	if(portal && position.x == coordsToPortal.x && Math.Abs(position.y) == coordsToPortal.y){
+		Application.LoadLevel(portalScene);
 	}
 	
 }
@@ -114,18 +161,24 @@ function MoveLeft()
 	rigidbody2D.velocity = new Vector3(velocity*(-1),0,0);
 }
 //---------------------------------------------------------------------------------------------
+function nextFase(fase: String)
+{
+	Application.LoadLevel(fase);
+}
 //Logica para cavar----------------------------------------------------------------------------
 function cave(direction: int)
 {
 	var position = getGridPosition();
-	if(position.x >=0 && position.x <= 9){
-		if(Math.Abs(position.y) >= 4 && Math.Abs(position.y) <= 9){
+	if(position.x >= xMinToCave && position.x <= xMaxToCave){
+		if(Math.Abs(position.y) >= yMinToCave && Math.Abs(position.y) <= yMaxToCave){
 			if(!getGrid(position)){
 				var gridCavado :GameObject = Instantiate(buraco, position, Quaternion.identity) as GameObject;
 				if(gridCavado){
 					gridCavado.name = "GRID_"+position.x+"_"+position.y;
 					gridCavado.tag = "buraco";
-					
+					if(foundAnyThing && position.x == coordsToFound.x && position.y == coordsToFound.y){
+						//TODO
+					}
 				}
 			}
 		}
@@ -136,8 +189,12 @@ function stopCave()
 {
 	spriteAnimator.SetBool('cave',false);
 	var qtdBuracos : int = GameObject.FindGameObjectsWithTag("buraco").length;
-	if(qtdBuracos == 60){
-		Application.LoadLevel('menu');
+	var qtdX = (xMaxToCave - xMinToCave) +1;
+	var qtdY = (yMaxToCave - yMinToCave) +1;
+
+	if(qtdBuracos >= (qtdX*qtdY)){
+		var prize :GameObject = Instantiate(prePrize) as GameObject;
+		
 	}
 }
 function getGrid(position: Vector3) :  GameObject{

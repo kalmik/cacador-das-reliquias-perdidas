@@ -1,6 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <PlacesCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <lugares>
+    <!-- FASE 1 -->
     <lugar nome="Rodoviária" mapName="map1" estado="RN" cidade="caíco" ator="Clotilde" ordem="1" dialogo="Menino, não  sei nada sobre lenda de feijão nenhum. Sobre essas coisa de lenda é melhor perguntar num museu ou perguntar a um padre." dialogo-errado="Não sei nada sobre lenda de feijão nenhum. Pergunte a um padre. Padre sempre sabe de tudo que é lenda." foto="velhinha" />
     
     <lugar nome="Igreja do Rosário" mapName="map1" estado="RN" cidade="caíco" ator="Amaralina" ordem="2" dialogo="Lamento criança, mas nunca ouvi nada sobre essa lenda.  Mas eu sei que  A Irmandade dos Negros do Rosário foi fundada em 1864 com a participação de Luiz Chermond, negro, homeopata e zelador daqui da Igreja. Você deveria procurar Seu Posidonio, ele é o chefe da irmandade. Não sei o endereço dele, mas sei que ele é poeta." dialogo-errado="Lamento, não sei de nada sobre essa lenda." foto="moca" />
@@ -19,9 +20,21 @@
 
     <lugar nome="Fazenda Samanau" mapName="map1" estado="RN" cidade="caíco" ator="Zeca" ordem="5" dialogo="O feijão já foi colhido e vendido mais se você abri o roçado com essa enxada da tempo de plantar e colher pra festa do Rosário." dialogo-errado="To ocupado menino, volte mais tarde." foto="caipira"/>
 
-     <lugar nome="Rodoviária" mapName="map2" estado="RN" cidade="currais novos" ator="João" ordem="1" dialogo="Panela! Tenho panela não menino. Porque cê num vai comprar uma." dialogo-errado="Comi muito feijão feito em panela de barro na minha mocidade. Hoje num sei nem onde é que vende." foto="velhoestranho"/>
+    
+    <!-- FASE 2 -->
+    <lugar nome="Rodoviária" mapName="map2" estado="RN" cidade="currais novos" ator="Velho Branco" ordem="1" dialogo="Panela! Tenho panela não menino. Porque cê num vai comprar uma." dialogo-errado="Comi muito feijão feito em panela de barro na minha mocidade. Hoje num sei nem onde é que vende." foto="caipira"/>
 
-     <lugar nome="Mercado" mapName="map2" estado="RN" cidade="currais novos" ator="Beiçola" ordem="2" dialogo="Hoje é Terça! A feira foi ontem. Tem mais panela de barro não. Você vai ter que pegar um pau de arara lá pra banda dos sitios e procurar direto com o povo que faz as panela. Mas é bom saber primeiro de quem é a panela que você quer comprar. Melhor perguntar ai ao povo do Rosário que mora na cidade." dialogo-errado="Hoje é Terça! A feira foi ontem. Tem mais panela de barro não." foto="gordo"/>
+    <lugar nome="Mercado" mapName="map2" estado="RN" cidade="currais novos" ator="Homem Branco" ordem="2" dialogo="oje é Terça! A feira foi ontem. Tem mais panela de barro não. Você vai ter que pegar um pau de arara lá pra banda dos sitios e procurar direto com o povo que faz as panela. Mas é bom saber primeiro de quem é a panela que você quer comprar. Melhor perguntar ai ao povo do Rosário que mora na cidade." dialogo-errado="Hoje é Terça! A feira foi ontem. Tem mais panela de barro não." foto="caipira"/>
 
+    <lugar nome="Igreja" mapName="map2" estado="RN" cidade="currais novos" ator="Mulher Branca" ordem="0" dialogo="Essa igreja não é do Rosário, mas tem uma antiga casa do Rosário aqui perto da Igreja. Só cuidado viu, que o povo aqui diz que Caboclo e Passarinho não se bicam." dialogo-errado="Essa igreja não é do Rosário." foto="caipira"/>
+
+    <lugar nome="Casa Azul" mapName="map2" estado="RN" cidade="currais novos" ator="Mulher Negra" ordem="3" dialogo="Oh menino num entra ai não, essa casa ta caindo. Eu sonhei com menino igual a tu ontem. E menino vinha atrás de uma panela. Se é panela que você quer, vá procurar dona Joana Caboclo. " dialogo-errado="Oh menino num entra ai não, essa casa ta caindo. Eu sonhei com menino igual a tu ontem. E menino vinha atrás de uma panela. Se é panela que você quer, vá procurar dona Joana Caboclo." foto="caipira"/>
+
+    <lugar nome="Casa Amarela" mapName="map2" estado="RN" cidade="currais novos" ator="Homem Negro" ordem="0" dialogo="Caboclo, que Caboclo o que?!?! Eu num sou Caboclo não, seu cabrinha danado. Eu vou pegar você pela “zurêia e vô le dá umas palmada”. Venha aqui meu medonho, vou lhe pegar." dialogo-errado="Caboclo, que Caboclo o que?!?! Eu num sou Caboclo não, seu cabrinha danado. Eu vou pegar você pela “zurêia e vô le dá umas palmada”. Venha aqui meu medonho, vou lhe pegar." foto="caipira"/>
+
+    <lugar nome="Casa de Joana" mapName="map2" estado="RN" cidade="currais novos" ator="Mulher Negra" ordem="5" dialogo="Sim, eu Sou Joana Cabocla, que é que há? Você quer uma Panela para festa do rosário de Jardim. Pois eu lhe dou com o maior prazer. Pegue. Só cuidado na hora de voltar. Não vá pela terra dos Negros não, pois se virem você com uma panala minha eles “vão dá brabo” com você." dialogo-errado=" To ocupada menino, volte mais tarde." foto="caipira"/>
+
+    <lugar nome="Fazenda" mapName="map2" estado="RN" cidade="currais novos" ator="Velho Negro" ordem="4" dialogo="Aqui é a Fazenda Bom Sucesso. Você vai ter que procurar a casa de Joana Cabocla. Eu não sei bem onde é, mais é ai pra riba. Vá perguntando por ai. Só tenha cuidado viu! Casa de Passarim é cor de papo de bem-ti-vi." dialogo-errado="Aqui é a Fazenda Bom Sucesso. Mas você tá procurando as Panela de quem? Tem gente demais aqui que faz. Se tu pergunta no canto errado vai ter problema." foto="caipira"/>
+    <!--  -->
   </lugares>
 </PlacesCollection>
