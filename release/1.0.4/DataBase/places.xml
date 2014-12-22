@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlacesCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <lugares>
+    <!-- FASE 1 -->
+    <lugar nome="Rodoviária" mapName="map1" estado="RN" cidade="caíco" ator="Clotilde" ordem="1" dialogo="Menino, não  sei nada sobre lenda de feijão nenhum. Sobre essas coisa de lenda é melhor perguntar num museu ou perguntar a um padre." dialogo-errado="Não sei nada sobre lenda de feijão nenhum. Pergunte a um padre. Padre sempre sabe de tudo que é lenda." foto="velhinha" />
+    
+    <lugar nome="Igreja do Rosário" mapName="map1" estado="RN" cidade="caíco" ator="Amaralina" ordem="2" dialogo="Lamento criança, mas nunca ouvi nada sobre essa lenda.  Mas eu sei que  A Irmandade dos Negros do Rosário foi fundada em 1864 com a participação de Luiz Chermond, negro, homeopata e zelador daqui da Igreja. Você deveria procurar Seu Posidonio, ele é o chefe da irmandade. Não sei o endereço dele, mas sei que ele é poeta." dialogo-errado="Lamento, não sei de nada sobre essa lenda." foto="moca" />
+
+    <lugar nome="Casa da Cultura" mapName="map1" estado="RN" cidade="caíco" ator="Jurema" ordem="3" dialogo="Aqui são organizadas exposições e eventos culturais. Tem um cordel de Seu Possidonio aqui:
+                                                                                                                              
+    	“Dançando e fazendo ponto                                          
+    	 Trocado a lança na mão                                          
+    	 Trocando uma tesoura                                          
+    	 Dando vida ao baião                                          
+    	 É a dança mais bonita que se viu no sertão”                      
+    	                                                                                                                               
+    	Posidônio do Rósario, que mora na casinha cor do céu" dialogo-errado="Eu sei quem é Seu Possidonio, mas não lembro onde ele mora."  foto="loira"/>
+
+    <lugar nome="Casa Azul" mapName="map1" estado="RN" cidade="caíco" ator="Seu Posidonio" ordem="4" dialogo="O grupo de negros do Rosário foi criado e recebeu este nome porque o fundador se chamava “Manoel do Rosário”. Ele gostava de rezar e acolheu muitos negros fugitivos em 1752. (...) A Irmandade nasceu de uma festa, com a primeira colheita feita após a Abolição, pelos negros livres em 1888. Esse feijão que você procura ta lá na Fazenda Samanau." dialogo-errado="To ocupado menino, volte mais tarde." foto="velhinho"/>
+
+    <lugar nome="Fazenda Samanau" mapName="map1" estado="RN" cidade="caíco" ator="Zeca" ordem="5" dialogo="O feijão já foi colhido e vendido mais se você abri o roçado com essa enxada da tempo de plantar e colher pra festa do Rosário." dialogo-errado="To ocupado menino, volte mais tarde." foto="caipira"/>
+
+    
+    <!-- FASE 2 -->
+    <lugar nome="Rodoviária" mapName="map2" estado="RN" cidade="currais novos" ator="Velho Branco" ordem="1" dialogo="Panela! Tenho panela não menino. Porque cê num vai comprar uma." dialogo-errado="Comi muito feijão feito em panela de barro na minha mocidade. Hoje num sei nem onde é que vende." foto="caipira"/>
+
+    <lugar nome="Mercado" mapName="map2" estado="RN" cidade="currais novos" ator="Homem Branco" ordem="2" dialogo="Hoje é Terça! A feira foi ontem. Tem mais panela de barro não. Você vai ter que pegar um pau de arara lá pra banda dos sitios e procurar direto com o povo que faz as panela. Mas é bom saber primeiro de quem é a panela que você quer comprar. Melhor perguntar ai ao povo do Rosário que mora na cidade." dialogo-errado="Hoje é Terça! A feira foi ontem. Tem mais panela de barro não." foto="caipira"/>
+
+    <lugar nome="Igreja" mapName="map2" estado="RN" cidade="currais novos" ator="Mulher Branca" ordem="0" dialogo="Essa igreja não é do Rosário, mas tem uma antiga casa do Rosário aqui perto da Igreja. Só cuidado viu, que o povo aqui diz que Caboclo e Passarinho não se bicam." dialogo-errado="Essa igreja não é do Rosário." foto="caipira"/>
+
+    <lugar nome="Casa Azul" mapName="map2" estado="RN" cidade="currais novos" ator="Mulher Negra" ordem="3" dialogo="Oh menino num entra ai não, essa casa ta caindo. Eu sonhei com menino igual a tu ontem. E menino vinha atrás de uma panela. Se é panela que você quer, vá procurar dona Joana Caboclo. " dialogo-errado="Oh menino num entra ai não, essa casa ta caindo. Eu sonhei com menino igual a tu ontem. E menino vinha atrás de uma panela. Se é panela que você quer, vá procurar dona Joana Caboclo." foto="caipira"/>
+
+    <lugar nome="Casa Amarela" mapName="map2" estado="RN" cidade="currais novos" ator="Homem Negro" ordem="0" dialogo="Caboclo, que Caboclo o que?!?! Eu num sou Caboclo não, seu cabrinha danado. Eu vou pegar você pela “zurêia e vô le dá umas palmada”. Venha aqui meu medonho, vou lhe pegar." dialogo-errado="Caboclo, que Caboclo o que?!?! Eu num sou Caboclo não, seu cabrinha danado. Eu vou pegar você pela “zurêia e vô le dá umas palmada”. Venha aqui meu medonho, vou lhe pegar." foto="caipira"/>
+
+    <lugar nome="Casa de Joana" mapName="map2" estado="RN" cidade="currais novos" ator="Mulher Negra" ordem="5" dialogo="Sim, eu Sou Joana Cabocla, que é que há? Você quer uma Panela para festa do rosário de Jardim. Pois eu lhe dou com o maior prazer. Pegue. Só cuidado na hora de voltar. Não vá pela terra dos Negros não, pois se virem você com uma panala minha eles “vão dá brabo” com você." dialogo-errado=" To ocupada menino, volte mais tarde." foto="caipira"/>
+
+    <lugar nome="Fazenda" mapName="map2" estado="RN" cidade="currais novos" ator="Velho Negro" ordem="4" dialogo="Aqui é a Fazenda Bom Sucesso. Você vai ter que procurar a casa de Joana Cabocla. Eu não sei bem onde é, mais é ai pra riba. Vá perguntando por ai. Só tenha cuidado viu! Casa de Passarim é cor de papo de bem-ti-vi." dialogo-errado="Aqui é a Fazenda Bom Sucesso. Mas você tá procurando as Panela de quem? Tem gente demais aqui que faz. Se tu pergunta no canto errado vai ter problema." foto="caipira"/>
+    
+    <!-- FASE 3 -->
+    <lugar nome="Rodoviária" mapName="map3" estado="RN" cidade="parelhas" ator="Mulher Branca" ordem="1" dialogo="Tambor? Sei não. Veja ali no ponto de Cultura é aqui perto da Rodoviária." dialogo-errado=" Tambor? Sei não." foto="caipira"/>
+
+    <lugar nome="O Ponto de Cultura" mapName="map3" estado="RN" cidade="parelhas" ator="Homem Branco" ordem="2" dialogo="O ponto de Cultura foi criado em 2005, mas não temos tambores aqui guardados. Você deveria ir até a comunidade da Boa Vista, que é fora da cidade." dialogo-errado="O ponto de Cultura foi criado em 2005, mas não temos tambores aqui guardados." foto="caipira"/>
+
+    <lugar nome="Capela" mapName="map3" estado="RN" cidade="parelhas" ator="Velha Negra" ordem="3" dialogo="Todos os moradores sonhavam em construir. Foi com o trabalho de cada um que conseguimos levantar essa Capela. Mas aqui não tem tambor. Veja na Casa de Dona Chica." dialogo-errado="A igreja está fechada, volte mais tarde." foto="caipira"/>
+
+    <lugar nome="Casa Azul" mapName="map3" estado="RN" cidade="parelhas" ator="Mulher Negra" ordem="4" dialogo="Aqui é casa de Dona Chica sim. Ela nasceu em 3 dezembro de 1937, em Boa Vista dos Negros. Ela foi a primeira professora do lugar. Mas não tem tambo nenhum aqui. Mas pode ter na casa do avô de Dona Chica, que fica aqui perto." dialogo-errado="Tô Ocupada, volte mais tarde." foto="caipira"/>
+
+    <lugar nome="Serra do Marimbondo" mapName="map3" estado="RN" cidade="parelhas" ator="Homem Negro" ordem="6" dialogo="Era aqui nessa Serra onde os moradores da Boa Vista se refugiavam no tempo da escravidão. Hoje só eu, Zé de Biu, venho pra essas bandas pastora minhas vacas. Talvez se você cavar perto da serra, você ache o tal tambor." dialogo-errado="Tô ocupado, volte mais tarde." foto="caipira"/>
+
+    <lugar nome="Casa Amarela" mapName="map3" estado="RN" cidade="parelhas" ator="Velho Negro" ordem="5" dialogo="Não, Theodozio era o bisavô de Dona Chica. Ele compra uma terra em 1888 onde foi criada a comunidade da Boa Vista, mas tambor aqui não tem. Ele deve ter enterrado lá na Serra." dialogo-errado="Tô ocupado, volte mais tarde." foto="caipira"/>
+
+    <!-- FASE 4 -->
+    <lugar nome="Rodoviária" mapName="map4" estado="RN" cidade="Serra Negra" ator="Homem Branco" ordem="1" dialogo="Espontão? Sei nem o que é isso. Pergunte ali na Capela que esse padre ai sabe de tudo." dialogo-errado="Espontão? Sei nem o que é isso" foto="caipira"/>
+
+    <lugar nome="O Ponto de Cultura" mapName="map4" estado="RN" cidade="Serra Negra" ator="Mulher Branca" ordem="4" dialogo="Seu Limdomar acabou de sair. Ele disse que iria visitar um parente num sítio lá do outro lado do rio." dialogo-errado="Acabei de fechar, volte mais tarde." foto="caipira"/>
+
+    <lugar nome="Igreja" mapName="map4" estado="RN" cidade="Serra Negra" ator="Padre Branco" ordem="2" dialogo="Aqui é Capela de Nossa Senhora do Ó: Erguida em 1735 por iniciativa de Manoel Pereira e seus filhos. O espontão que você procura, quem deve saber, é seu Lindomar Medeiros. A casa dele é perto do Mercado." dialogo-errado=" Estou com pressa, volte mais tarde." foto="caipira"/>
+
+    <lugar nome="Casa Azul" mapName="map4" estado="RN" cidade="Serra Negra" ator="Mulher Negra" ordem="3" dialogo="Limdomar saiu. Ele foi ali na Casa da Cultura." dialogo-errado="Tô Ocupada, volte mais tarde." foto="caipira"/>
+
+    <lugar nome="Fazenda" mapName="map4" estado="RN" cidade="Serra Negra" ator="Homem Negro" ordem="5" dialogo="A denominação da cidade está relacionada a história de uma negra que fugiu em direção à serra e lá residiu com seus descendentes índios, até que um dia foi surpreendida e atacada por um animal, possivelmente uma onça. O espontão se encontra enterrado em uma árvore perto do local onde a onça que devorou a negra dorme com seus filhotes." dialogo-errado="Tô ocupado, volte mais tarde." foto="caipira"/>
+  </lugares>
+</PlacesCollection>
